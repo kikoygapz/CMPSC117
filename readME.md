@@ -1,1 +1,1 @@
-The following website is created using HTML only. The styles and layout will be handled by CSS.
+The following website is created using HTML and some CSS.
