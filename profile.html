@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Edit Profile</title>
 </head>
@@ -13,10 +16,11 @@
             <li><a href="./about.html" class="navlink">About</a></li>
         </ul>
         </div>
-    <form action="" method="POST">
-        First Name <br><input type="text" name="firstname"><br>
-        Last Name <br><input type="text" name="lastname"><br>
-        Address <br><input type="text" name="address"><br><br>
+    <form action="config.php">
+        <label for="name">Name</label> <br><input type="text" name="name"><br><br>
+        <label for="age">Age</label> <br><input type="number" name="age"><br><br>
+        <label for="address">Address</label> <br><input type="text" name="address"><br><br>
+
 
         <label for="birthdate">Birthday <br> <input type="date" value="birthdate"> </label><br><br>
 
@@ -28,7 +32,7 @@
         <input type="tel" name="phone"><br><br><br>
 
         <input type="button" value="Cancel">
-        <input type="button" value="Submit">
+        <input type="submit">
         
     </form>
 </body>
