@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Add Blog</title>
+    <script>
+        function passValue(){
+            var title = document.getElementById('title').value;
+            var content = document.getElementById('story').value;
+            localStorage.setItem('title',title);
+            localStorage.setItem('story',content);
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topbar">
+        <ul>
+            <li><input class="searchbar" type="text" placeholder="Search"></li>
+            <li><a href="./index.html" class="navlink">Home</a></li>
+            <li><a href="./profile.html" class="navlink">Profile</a></li>
+            <li><a href="./about.html" class="navlink">About</a></li>
+        </ul>
+    </div>
+    <form action="index.html">
+    <div class="content">
+        <label>Title: </label><input type="text"  id="title"> <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="blog">Content: </label><br>
+
+
+        <textarea id="story" rows="5" cols="33">Enter Post Here...
+        </textarea>
+        <br>
+        <br>
+        <br>
+        <input type="button" id="save" value="Save" onclick="passValue();">
+        <input type="button" value="Discard">
+    </div>
+    </form>
+
+</body>
+
+</html>
