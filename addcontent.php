@@ -3,15 +3,6 @@
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <title>Add Blog</title>
-    <script>
-        function passValue(){
-            var title = document.getElementById('title').value;
-            var content = document.getElementById('story').value;
-            localStorage.setItem('title',title);
-            localStorage.setItem('story',content);
-            return false;
-        }
-    </script>
 </head>
 
 <body>
@@ -23,9 +14,9 @@
             <li><a href="./about.html" class="navlink">About</a></li>
         </ul>
     </div>
-    <form action="index.html">
+    <form action="insert.php" method="POST">
     <div class="content">
-        <label>Title: </label><input type="text"  id="title"> <br>
+        <label>Title: </label><input type="text"  name="title"> <br>
         <br>
         <br>
         <br>
@@ -34,12 +25,12 @@
         <label for="blog">Content: </label><br>
 
 
-        <textarea id="story" rows="5" cols="33">Enter Post Here...
+        <textarea name="content" rows="5" cols="33">Enter Post Here...
         </textarea>
         <br>
         <br>
         <br>
-        <input type="button" id="save" value="Save" onclick="passValue();">
+        <input type="submit" value="submit">
         <input type="button" value="Discard">
     </div>
     </form>
