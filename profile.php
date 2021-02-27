@@ -16,7 +16,7 @@
             <li><a href="./about.html" class="navlink">About</a></li>
         </ul>
         </div>
-    <form action="config.php">
+    <<form action="addprofile.php" method="POST">
         <label for="name">Name</label> <br><input type="text" name="name"><br><br>
         <label for="age">Age</label> <br><input type="number" name="age"><br><br>
         <label for="address">Address</label> <br><input type="text" name="address"><br><br>
